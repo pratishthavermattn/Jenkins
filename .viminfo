@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1617787578,,"wq"
+|2,0,1617787946,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,24 +25,42 @@
 # Registers:
 
 # File marks:
-'0  3  11  ~/a.txt
-|4,48,3,11,1617787578,"~/a.txt"
-'1  3  11  ~/Jenkins/a.txt
-|4,49,3,11,1617787244,"~/Jenkins/a.txt"
-'2  2  10  ~/Jenkins/a.txt
-|4,50,2,10,1617784343,"~/Jenkins/a.txt"
-'3  2  10  ~/Jenkins/a.txt
-|4,51,2,10,1617784343,"~/Jenkins/a.txt"
+'0  4  8  ~/a.txt
+|4,48,4,8,1617787946,"~/a.txt"
+'1  3  11  ~/a.txt
+|4,49,3,11,1617787578,"~/a.txt"
+'2  3  11  ~/a.txt
+|4,50,3,11,1617787578,"~/a.txt"
+'3  3  11  ~/Jenkins/a.txt
+|4,51,3,11,1617787244,"~/Jenkins/a.txt"
+'4  2  10  ~/Jenkins/a.txt
+|4,52,2,10,1617784343,"~/Jenkins/a.txt"
+'5  2  10  ~/Jenkins/a.txt
+|4,53,2,10,1617784343,"~/Jenkins/a.txt"
 
 # Jumplist (newest first):
+-'  4  8  ~/a.txt
+|4,39,4,8,1617787946,"~/a.txt"
+-'  3  11  ~/a.txt
+|4,39,3,11,1617787936,"~/a.txt"
 -'  3  11  ~/a.txt
 |4,39,3,11,1617787578,"~/a.txt"
+-'  1  0  ~/a.txt
+|4,39,1,0,1617787552,"~/a.txt"
 -'  1  0  ~/a.txt
 |4,39,1,0,1617787552,"~/a.txt"
 -'  3  11  ~/Jenkins/a.txt
 |4,39,3,11,1617787244,"~/Jenkins/a.txt"
 -'  3  11  ~/Jenkins/a.txt
 |4,39,3,11,1617787244,"~/Jenkins/a.txt"
+-'  3  11  ~/Jenkins/a.txt
+|4,39,3,11,1617787244,"~/Jenkins/a.txt"
+-'  3  11  ~/Jenkins/a.txt
+|4,39,3,11,1617787244,"~/Jenkins/a.txt"
+-'  2  10  ~/Jenkins/a.txt
+|4,39,2,10,1617787232,"~/Jenkins/a.txt"
+-'  2  10  ~/Jenkins/a.txt
+|4,39,2,10,1617787232,"~/Jenkins/a.txt"
 -'  2  10  ~/Jenkins/a.txt
 |4,39,2,10,1617787232,"~/Jenkins/a.txt"
 -'  2  10  ~/Jenkins/a.txt
@@ -51,6 +69,18 @@
 |4,39,2,10,1617784343,"~/Jenkins/a.txt"
 -'  2  10  ~/Jenkins/a.txt
 |4,39,2,10,1617784343,"~/Jenkins/a.txt"
+-'  2  10  ~/Jenkins/a.txt
+|4,39,2,10,1617784343,"~/Jenkins/a.txt"
+-'  2  10  ~/Jenkins/a.txt
+|4,39,2,10,1617784343,"~/Jenkins/a.txt"
+-'  1  0  ~/Jenkins/a.txt
+|4,39,1,0,1617784331,"~/Jenkins/a.txt"
+-'  1  0  ~/Jenkins/a.txt
+|4,39,1,0,1617784331,"~/Jenkins/a.txt"
+-'  1  0  ~/Jenkins/a.txt
+|4,39,1,0,1617784331,"~/Jenkins/a.txt"
+-'  1  0  ~/Jenkins/a.txt
+|4,39,1,0,1617784331,"~/Jenkins/a.txt"
 -'  1  0  ~/Jenkins/a.txt
 |4,39,1,0,1617784331,"~/Jenkins/a.txt"
 -'  1  0  ~/Jenkins/a.txt
@@ -63,13 +93,15 @@
 # History of marks within files (newest to oldest):
 
 > ~/a.txt
-	*	1617787577	0
-	"	3	11
-	^	3	12
-	.	3	11
+	*	1617787945	0
+	"	4	8
+	^	4	9
+	.	4	8
 	+	1	12
 	+	2	12
-	+	3	11
+	+	3	12
+	+	4	0
+	+	4	8
 
 > ~/Jenkins/a.txt
 	*	1617787244	0
