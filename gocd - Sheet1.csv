@@ -1,0 +1,3 @@
+app_name,env_name ,pipeline_suffix ,version ,cfndsl 
+api-service-call-centre ,prod ,v2,,
+api-service-config,prod ,v1,,
