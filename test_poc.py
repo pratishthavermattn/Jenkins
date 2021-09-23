@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-df = pd.read_csv('/home/ubuntu/gocd.csv')
+df = pd.read_csv('gocd.csv')
 df['job_name'] = df.app_name + '-' + df.env_name
 df.to_csv("gocd.csv", index=False)
 
