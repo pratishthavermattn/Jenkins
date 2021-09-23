@@ -12,18 +12,16 @@ headers = {
     'Content-Type': 'application/json',
 }
 
-#p = df['job_name']+'_'+df['tag']
-s = df['job_name'].to_string(index=False)
-r = s+'_DOCKER_TAG'
-print(r)
-e = os.environ[r] = ''
-print(e)
+#s = df['job_name'].to_string(index=False)
+#r = s+'_DOCKER_TAG'
+#print(r)
+#e = os.environ[r] = ''
+#print(e)
 
 for x,y in zip(df['tag'], df['job_name']):
-    #p = df['job_name']+'_DOCKER_TAG'
-    #p = df['job_name'].to_string(index=False)
-    #t = df['job_name'].to_string(index=False)
-    #q = t+'_DOCKER_TAG'
-    #os.environ[q] = ''
+    t = df['job_name'].to_string(index=False)
+    q = t+'_DOCKER_TAG'
+    os.environ[q] = ''
+    print(os.getenv(p))
     data = '{ "environment_variables": [ { "name": "DOCKER_TAG", "secure": false, "value": "'+x+'" } ], "materials": [ { "fingerprint": "ce9a42e6af4ef32a1d5169c7a16ee5b2f398265631ce6144c3f81e4ed7bd8854", "revision": "f91fd59bfcefd6db86254d7ddc243a9bef8f5b65" } ], "update_materials_before_scheduling": true }'
     response = requests.post('http://localhost:8153/go/api/pipelines/'+y+'/schedule', headers=headers, data=data)
