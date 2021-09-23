@@ -14,7 +14,7 @@ headers = {
 
 #p = df['job_name']+'_'+df['tag']
 s = df['job_name'].to_string(index=False)
-r = t+'_DOCKER_TAG'
+r = s+'_DOCKER_TAG'
 print(r)
 
 for x,y in zip(df['tag'], df['job_name']):
