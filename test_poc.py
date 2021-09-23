@@ -11,6 +11,11 @@ headers = {
     'Content-Type': 'application/json',
 }
 
+#for x,y in zip(df['tag'], df['job_name']):
+#    data = '{ "environment_variables": [ { "name": "DOCKER_TAG", "secure": false, "value": "'+x+'" } ], "materials": [ { "fingerprint": "ce9a42e6af4ef32a1d5169c7a16ee5b2f398265631ce6144c3f81e4ed7bd8854", "revision": "f91fd59bfcefd6db86254d7ddc243a9bef8f5b65" } ], "update_materials_before_scheduling": true }'
+#    response = requests.post('http://localhost:8153/go/api/pipelines/'+y+'/schedule', headers=headers, data=data)
+
 for x,y in zip(df['tag'], df['job_name']):
-    data = '{ "environment_variables": [ { "name": "DOCKER_TAG", "secure": false, "value": "'+x+'" } ], "materials": [ { "fingerprint": "ce9a42e6af4ef32a1d5169c7a16ee5b2f398265631ce6144c3f81e4ed7bd8854", "revision": "f91fd59bfcefd6db86254d7ddc243a9bef8f5b65" } ], "update_materials_before_scheduling": true }'
+    p = df['job_name']+'_'+df['tag']
+    data = '{ "environment_variables": [ { "name": "'+p+'", "secure": false, "value": "'+x+'" } ], "materials": [ { "fingerprint": "ce9a42e6af4ef32a1d5169c7a16ee5b2f398265631ce6144c3f81e4ed7bd8854", "revision": "f91fd59bfcefd6db86254d7ddc243a9bef8f5b65" } ], "update_materials_before_scheduling": true }'
     response = requests.post('http://localhost:8153/go/api/pipelines/'+y+'/schedule', headers=headers, data=data)
