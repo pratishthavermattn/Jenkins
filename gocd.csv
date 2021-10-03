@@ -1,3 +1,4 @@
-app_name,env_name,pipeline_suffix,tag
-api-service-call-centre,prod,v2,abc
-api-service-config,prod,v1,xyz
+app_name,env_name,pipeline_suffix,tag,pipeline_group
+api-service-call-centre,prod,v2,abc,child_tabcorp
+api-service-config,prod,v1,xyz,child_tabcorp
+test,prod,v1,pqr,testing
