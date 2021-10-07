@@ -51,7 +51,7 @@ resp_history = response_history.json()
 
 for x,y,z,w in zip(df['tag'], df['job_name'], df['pipeline_group'], df['revision']):
     response_pipeline = requests.get(f"http://localhost:8153/go/api/admin/pipeline_groups/{z}", headers=headers)
-    print(z)
+    print("Pipeline Group:", z)
     resp_pipeline = response_pipeline.json()
     utf8string = []
     for name in resp_pipeline['pipelines']:
@@ -59,9 +59,9 @@ for x,y,z,w in zip(df['tag'], df['job_name'], df['pipeline_group'], df['revision
         utf8string.append(pipeline_name)
     if y in utf8string:
         if w != "none":
-            print("Present", y)
+            print("Present:", y)
             materials = [{ "fingerprint": "3f0eb2f8a536c4ae3ced311c1679ea0a6593e081c2a4d0286e28c9945ff7d8ea", "revision": w }]
         data = '{ "environment_variables": [ { "name": "DOCKER_TAG", "secure": false, "value": "'+x+'" } ], "materials": '+str(materials)+', "update_materials_before_scheduling": '+update+' }'
         response = requests.post('http://localhost:8153/go/api/pipelines/'+y+'/schedule', headers=headers, data=data)
     else:
-        print("Not present", y)
+        print("Not present:", y)
