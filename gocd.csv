@@ -2,4 +2,4 @@ app_name,env_name,pipeline_suffix,tag,pipeline_group,revision
 api-service-call-centre,prod,v2,abc,child_tabcorp,7e6c37a102f329cdf2ebd452b3ce109f4fe636d3
 api-service-config,prod,v1,xyz,child_tabcorp,7e6c37a102f329cdf2ebd452b3ce109f4fe636d3
 test,prod,v1,pqr,testing,none
-test2,prod,v1,efg,testing,none
+test2,prod,v1,efg,testing,7e6c37a102f329cdf2ebd452b3ce109f4fe636d3
