@@ -1,2 +1,6 @@
 Stream,Tribe,Service_Name,Docker_Tag
 Retails,Apps,api-service-betting,v2.1.0
+Customer Channel,appmesh,mapping-service,v1.0.0
+Core,Tote,service-blackbook-v2,v1.2.0
+Retails,Apps,service-idenity,v2.0.0
+Core,Tote,same-game-worker,v1.2.0
